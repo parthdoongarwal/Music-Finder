@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="con">
+      <div id="input-con">
+        <p style="color: white" id="tips">
+          Type the name of your favorite artist or song. Example Sia or
+          chandelier by sia
+        </p>
+        <input
+          type="text"
+          id="nameArtist"
+        
+          placeholder="type the name of your favorite Artist or Song"
+        />
+        <button id="find" class="button-29" onclick="getSong()">Find</button>
+      </div>
+      <div id="text-con">
+        <div id="loade"></div>
+        <img id="thumnail-img" alt="" src="" />
+        <div id="sia">
+          <h1 id="title"></h1>
+          <img src="" alt="" id="musicMaker-img" />
+        </div>
+        <h1 id="lyrics"></h1>
+        <h1 id="date"></h1>
+        <h1 id="video"></h1>
+
+        <script crossorigin src="//genius.com/songs/378195/embed.js"></script>
+
+        <div id="btn-con">
+          <button id="back" class="button-41" onclick="back()">back</button>
+          <button id="next" class="button-41" onclick="next()">next</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

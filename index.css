@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  outline: none;
+}
+
+#con {
+  height: 100vh;
+  display: flex;
+}
+
+#input-con {
+  background: rgba(0, 0, 0, 0.6) url("headphones-background.jpeg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nameArtist {
+  width: 80%;
+  padding: 20px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  transition: 400ms;
+}
+
+#nameArtist:focus {
+  border: 2px white solid;
+}
+
+#text-con {
+  position: relative;
+
+  width: 65%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#thumnail-img {
+  background: red;
+
+  width: 35%;
+  border-radius: 5px;
+}
+
+#find {
+  margin-top: 30px;
+}
+
+#title {
+  color: rgba(165, 26, 207, 0.803);
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#lyrics a {
+  text-decoration: none;
+}
+
+#lyrics {
+  padding: 10px;
+}
+
+#date {
+  padding: 20px;
+}
+
+.date {
+  display: inline;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#video a {
+  text-decoration: none;
+  transform: 500ms;
+}
+
+#next {
+  display: none;
+  margin-left: 15px;
+}
+#back {
+  display: none;
+  margin-right: 15px;
+}
+
+#btn-con {
+  display: none;
+  margin-top: 50px;
+  display: flex;
+}
+.disabled {
+  background: grey;
+}
+
+#musicMaker-img {
+  width: 5%;
+  margin-left: 20px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+#sia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tips {
+  padding-bottom: 10%;
+  line-height: 35px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.video-conn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-img {
+  margin-left: 20px;
+  width: 5%;
+}
+
+#sound {
+  background: red;
+}
+
+/* CSS
+/* CSS */
+.button-41 {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00d775, #00bd68);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+}
+
+.button-41:hover {
+  background: #00bd68;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  width: 100px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+@media (max-width: 1000px) {
+  #con {
+    flex-direction: column;
+  }
+
+  #input-con {
+    padding: 50px 0 50px 0;
+    width: 100%;
+    height: 100%;
+  }
+  #nameArtist {
+    font-size: 15px;
+  }
+  #text-con {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  #title {
+    font-size: 30px;
+  }
+
+  #lyrics a {
+    font-size: 25px;
+  }
+
+  #date {
+    font-size: 25px;
+  }
+  #video a {
+    font-size: 25px;
+  }
+
+  #thumnail-img {
+    margin-top: 20px;
+  }
+
+  #musicMaker-img {
+    width: 10%;
+  }
+}
